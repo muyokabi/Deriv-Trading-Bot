@@ -31,7 +31,7 @@ for handler in logging.root.handlers[:]:
 
 # --- CONFIG ---
 APP_ID = 85473
-API_TOKEN = "YUa7FW6khNWqwyW"
+API_TOKEN = "YUa7FW6khNwyW"  # replace with your Api token
 SYMBOL = "1HZ10V"
 STAKE = 0.35
 TRADE_DURATION_SECONDS = 1 # This is the "duration" for the Deriv API call in ticks - CHANGED TO 1 TICK
@@ -782,4 +782,5 @@ if __name__ == "__main__":
     except KeyboardInterrupt:
         console.print("\n[bold red]Bot process interrupted by user (Ctrl+C).[/bold red]")
     except Exception as e:
+
         console.print(f"\n[bold red]An unexpected error occurred outside the main loop: {str(e)}[/bold red]")
